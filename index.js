@@ -13,7 +13,7 @@ function displayMenuItems(menu) {
         // Create an element to represent the category
     for (menuCategory in menu){
         const menuSection = document.createElement('div')
-        const categoryEl = document.createElement('h2');
+        const categoryEl = document.createElement('h3');
         categoryEl.textContent = menuCategory;
         console.log(categoryEl)
         // Append the category element to the menu container
