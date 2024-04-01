@@ -48,7 +48,7 @@ function displayMenuItems(menu) {
 function addToOrder(order) {
     // Get the order items list and the order total element from the HTML
     const orderItemsContainer = document.getElementById('order-items');
-    
+    orderItemsContainer.innerHTML = '';
     
     order.forEach(item => {
         // Create a list item for the order
