@@ -15,7 +15,10 @@ function displayMenuItems(menu) {
         const menuSection = document.createElement('div')
         const categoryEl = document.createElement('h3');
         categoryEl.textContent = menuCategory;
-        console.log(categoryEl)
+        
+        // Create an element to represent a list of items
+        const itemList = document.createElement('ul');
+
         // Append the category element to the menu container
         menuSection.appendChild(categoryEl)
         menuContainer.appendChild(menuSection);
@@ -23,8 +26,7 @@ function displayMenuItems(menu) {
     }
 
         
-        // Create an element to represent a list of items
-
+        
         // Append a list of items element to the menu container
 
         // Loop through the items in the category and create list items
