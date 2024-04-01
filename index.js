@@ -28,6 +28,7 @@ function displayMenuItems(menu) {
 
             listItem.addEventListener('click', () => {
             order.push(item);
+            addToOrder(order)
             
         });
 
