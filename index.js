@@ -30,7 +30,7 @@ function displayMenuItems(menu) {
             order.push(item);
             addToOrder(order)
             
-        });
+            });
 
             itemList.appendChild(listItem);
         });
