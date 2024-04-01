@@ -12,12 +12,13 @@ function displayMenuItems(menu) {
     // Loop through each category and its items in the menu object
         // Create an element to represent the category
     for (menuCategory in menu){
-        const categoryEl = document.createElement("div");
-        
-        // Set the text content of the category element to the category name
+        const menuSection = document.createElement('div')
+        const categoryEl = document.createElement('h2');
         categoryEl.textContent = menuCategory;
+        console.log(categoryEl)
         // Append the category element to the menu container
-        menuContainer.appendChild(categoryEl);
+        menuSection.appendChild(categoryEl)
+        menuContainer.appendChild(menuSection);
 
     }
 
