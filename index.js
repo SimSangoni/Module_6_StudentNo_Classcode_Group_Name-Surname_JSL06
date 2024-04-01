@@ -25,6 +25,12 @@ function displayMenuItems(menu) {
         menu[menuCategory].forEach(item => {
             const listItem = document.createElement('li');
             listItem.textContent = item;
+
+            listItem.addEventListener('click', () => {
+            order.push(item);
+            console.log(order);
+        });
+
             itemList.appendChild(listItem);
         });
 
