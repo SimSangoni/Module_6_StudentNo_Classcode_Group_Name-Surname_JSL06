@@ -28,7 +28,7 @@ function displayMenuItems(menu) {
 
             listItem.addEventListener('click', () => {
             order.push(item);
-            console.log(order);
+            
         });
 
             itemList.appendChild(listItem);
@@ -40,21 +40,6 @@ function displayMenuItems(menu) {
         menuContainer.appendChild(menuSection);
 
     }
-
-        
-        
-    
-
-        
-
-            // Create a list item element
-
-            // Set the text content of the list item element to the item name
-
-            // Attach a click event listener to the list item to add it to the order
-
-            // Append the list item to the list of items
-
             
 }
 
