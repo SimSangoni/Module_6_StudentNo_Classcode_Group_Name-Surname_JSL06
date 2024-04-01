@@ -48,11 +48,16 @@ function displayMenuItems(menu) {
 function addToOrder(order) {
     // Get the order items list and the order total element from the HTML
     const orderItemsContainer = document.getElementById('order-items');
-    // Create a list item for the order
-
-    // Set the text content of the list item to the item name
-
-    // Append the list item to the order items list
+    
+    
+    order.forEach(item => {
+        // Create a list item for the order
+        const orderItem = document.createElement('li');
+        // Set the text content of the list item to the item name
+        orderItem.textContent = item;
+        // Append the list item to the order items list
+        orderItemsContainer.appendChild(orderItem);
+    });
 
     // Calculate and update the total price
 
