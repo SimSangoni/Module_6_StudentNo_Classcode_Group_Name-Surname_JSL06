@@ -27,14 +27,15 @@ function displayMenuItems(menu) {
         });
 
         // Append the category element to the menu container
-        menuSection.appendChild(categoryEl)
+        menuSection.appendChild(categoryEl);
+        menuSection.appendChild(itemList);
         menuContainer.appendChild(menuSection);
 
     }
 
         
         
-        // Append a list of items element to the menu container
+    
 
         
 
