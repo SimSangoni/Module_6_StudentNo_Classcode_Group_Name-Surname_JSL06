@@ -13,7 +13,7 @@ function displayMenuItems(menu) {
     const menuContainer = document.getElementById('menu');
     // Loop through each category and its items in the menu object
         // Create an element to represent the category
-    for (menuCategory in menu){
+    for (const [menuCategory, items] of Object.entries(menu)){
         const menuSection = document.createElement('div')
         const categoryEl = document.createElement('h3');
         categoryEl.textContent = menuCategory;
@@ -22,7 +22,7 @@ function displayMenuItems(menu) {
         const itemList = document.createElement('ul');
 
         // Loop through the items in the category and create list items
-        menu[menuCategory].forEach(item => {
+        items.forEach(item => {
             const listItem = document.createElement('li');
             listItem.textContent = item;
 
