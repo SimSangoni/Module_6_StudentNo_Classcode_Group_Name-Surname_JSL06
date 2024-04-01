@@ -64,6 +64,7 @@ function addToOrder(order) {
     const totalPrice = order.length * itemPrice;
     // Update the text content of the order total element with the new total
     const orderTotalElement = document.getElementById('order-total');
+    orderTotalElement.textContent = totalPrice;
 }
 
 // Function to initialize the menu system
